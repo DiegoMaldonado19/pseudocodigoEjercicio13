@@ -1,0 +1,36 @@
+Algoritmo algoritmo13
+	Definir salir Como Logico
+	Definir op Como Entero
+	Definir num1 Como Entero
+	Definir num2 Como Entero
+	op <- 0
+	salir <- Falso
+	Repetir
+		Escribir 'Bienvenido'
+		Escribir 'Ingresa el primer numero'
+		Leer num1
+		Escribir 'Ingresa el segundo numero'
+		Leer num2
+		Escribir '¿Qué deseas hacer?'
+		Escribir '1) Sumar'
+		Escribir '2) Dividir'
+		Escribir '3) Salir'
+		Leer op
+		Segun op  Hacer
+			1:
+				suma <- num1+num2
+				Escribir 'La suma de ',num1,' + ',num2,' es: ',suma
+			2:
+				Si num2==0 Entonces
+					Escribir 'No se puede dividir entre 0'
+				SiNo
+					division <- num1/num2
+					Escribir 'La division entre ',num1,' y ',num2,' es: ',division
+				FinSi
+			3:
+				salir <- Verdadero
+			De Otro Modo:
+				Escribir 'Ingresa una opcion valida'
+		FinSegun
+	Hasta Que salir==Verdadero
+FinAlgoritmo
